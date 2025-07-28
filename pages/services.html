@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>據點服務 - 幸福記憶小樓</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Noto Sans Traditional Chinese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #FDF8F0;
+            color: #4C4F5A;
+        }
+        .bg-soft-green { background-color: #4A7C59; }
+        .bg-light-beige { background-color: #FDF8F0; }
+        .bg-white-card { background-color: #FFFFFF; }
+        .text-soft-green { color: #4A7C59; }
+        .text-warm-orange { color: #F5B880; }
+        .text-main { color: #4C4F5A; }
+        .border-soft-green { border-color: #4A7C59; }
+        html {
+            scroll-behavior: smooth;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-light-beige">
+    
+    <!-- Header -->
+    <header class="bg-light-beige/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200/80">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center space-x-2">
+                <i data-lucide="brain-circuit" class="text-soft-green"></i>
+                <span class="font-bold text-xl text-soft-green">幸福記憶小樓</span>
+            </a>
+            <div>
+                <a href="../index.html" class="text-main hover:text-soft-green transition duration-300 font-semibold">
+                    &larr; 返回首頁
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-6 py-12">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl font-bold text-soft-green mb-2">據點服務</h1>
+                <p class="text-lg text-main">我們提供多元化的免費課程，由專業人員引導，旨在促進認知、活化身心，並為照顧者提供支持。</p>
+            </div>
+            
+            <!-- Weekly Schedule -->
+            <div class="max-w-4xl mx-auto bg-white-card rounded-2xl shadow-lg overflow-hidden mb-12">
+                <div class="p-4 bg-soft-green/10 text-center font-bold text-soft-green">
+                    幸福記憶小樓・每週課表
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-center">
+                        <thead class="border-b-2 border-soft-green/10">
+                            <tr>
+                                <th class="p-4 font-bold text-soft-green">時段</th>
+                                <th class="p-4 font-bold text-soft-green">星期二</th>
+                                <th class="p-4 font-bold text-soft-green">星期三</th>
+                                <th class="p-4 font-bold text-soft-green">星期五</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200/80">
+                                <td class="p-4 font-medium">08:30 – 10:00</td>
+                                <td class="p-4">量血壓<br>現實導向</td>
+                                <td class="p-4">量血壓<br>現實導向</td>
+                                <td class="p-4">量血壓<br>現實導向</td>
+                            </tr>
+                            <tr class="border-b border-gray-200/80 bg-soft-green/5">
+                                <td class="p-4 font-medium">10:00 – 12:00</td>
+                                <td class="p-4">大腦保健班</td>
+                                <td class="p-4">樂齡金頭腦</td>
+                                <td class="p-4">藝術創作</td>
+                            </tr>
+                            <tr class="border-b border-gray-200/80 bg-gray-100">
+                                <td class="p-4 font-bold text-gray-500">午休</td>
+                                <td class="p-4">—</td>
+                                <td class="p-4">—</td>
+                                <td class="p-4">—</td>
+                            </tr>
+                            <tr class="border-b border-gray-200/80">
+                                <td class="p-4 font-medium">13:00 – 14:00</td>
+                                <td class="p-4">現實導向<br>伸展運動</td>
+                                <td class="p-4">現實導向<br>伸展運動</td>
+                                <td class="p-4">現實導向<br>伸展運動</td>
+                            </tr>
+                            <tr class="bg-soft-green/5">
+                                <td class="p-4 font-medium">14:00 – 16:00</td>
+                                <td class="p-4">認知促進<br>模組課程</td>
+                                <td class="p-4">社區復健</td>
+                                <td class="p-4">大家一起<br>動動腦</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="p-4 text-sm text-center text-gray-500 bg-gray-50">
+                    *課程仍以院方實際公告與臨時調整為準。
+                </div>
+            </div>
+
+            <!-- Course Descriptions -->
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-center text-soft-green mb-8">課程介紹</h2>
+                <div class="space-y-4">
+                    <div class="accordion-item bg-white-card rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-soft-green text-left text-lg">
+                            <span>認知促進課程 (大腦保健班、樂齡金頭腦、動動腦)</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-5 pt-2 pb-5 text-main">
+                                <p>透過多元有趣的益智遊戲、桌遊、懷舊主題討論與現實導向活動，刺激大腦不同區域的功能，活化心智、延緩認知退化。課程設計旨在建立正向的成功經驗，讓長輩在歡笑與互動中鍛鍊腦力、找回自信。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-white-card rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-soft-green text-left text-lg">
+                            <span>藝術創作</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-5 pt-2 pb-5 text-main">
+                                <p>藝術是無國界的語言。透過繪畫、剪貼、黏土、手工藝等非語言的表達方式，我們提供一個安全、無壓力的創作環境，讓長輩能自由地抒發內心情感、增加成就感，並在過程中訓練手眼協調與精細動作能力。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-white-card rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-soft-green text-left text-lg">
+                            <span>體能與社區復健</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-5 pt-2 pb-5 text-main">
+                                <p>結合和緩的伸展運動與社區資源，我們鼓勵長輩維持身體活動能力。活動內容包含安全有趣的居家運動、平衡訓練、柔軟度練習等，旨在維持肌力、預防跌倒，並促進與社區的連結。</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="accordion-item bg-white-card rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 font-semibold text-soft-green text-left text-lg">
+                            <span>家屬支持服務</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-5 pt-2 pb-5 text-main">
+                                <p>我們深知照顧者的辛勞，據點不僅是長輩的園地，也是家屬的避風港。我們定期舉辦照顧者支持團體與照顧技巧課程，提供一個讓您交流經驗、抒發壓力、學習新知的平台，讓您在照顧路上不孤單。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-white-card border-t mt-12">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 臺北市立聯合醫院陽明院區 神經內科. All Rights Reserved.</p>
+            <p class="text-sm mt-2">本網站內容僅供參考，若有醫療問題請諮詢專業醫師。</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Wait for the DOM to be fully loaded before running scripts
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('i[data-lucide="chevron-down"]');
+                    
+                    // Close other open accordions first
+                    document.querySelectorAll('.accordion-item').forEach(item => {
+                        if (item !== header.parentElement) {
+                            const otherContent = item.querySelector('.accordion-content');
+                            const otherIcon = item.querySelector('.accordion-header i[data-lucide="chevron-down"]');
+                            
+                            // Add checks to prevent errors if elements are not found
+                            if (otherContent) {
+                                otherContent.style.maxHeight = null;
+                            }
+                            if (otherIcon) {
+                                otherIcon.style.transform = 'rotate(0deg)';
+                            }
+                        }
+                    });
+
+                    // Toggle the clicked one
+                    if (content && content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        if (icon) icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        if (content) {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                            if (icon) icon.style.transform = 'rotate(180deg)';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
