@@ -8,9 +8,7 @@
 
 ## **網站連結**
 
-[點此前往「幸福記憶小棧」官方網站](https://www.google.com/search?q=https://%3Cyour-github-username%3E.github.io/%3Cyour-repo-name%3E/)
-
-*(請將 \<your-github-username\> 和 \<your-repo-name\> 替換為您自己的 GitHub 使用者名稱與儲存庫名稱)*
+[點此前往「幸福記憶小棧」官方網站](https://thc1006.github.io/tpech-ym-dementia-care/)
 
 ## **主要功能與頁面**
 
