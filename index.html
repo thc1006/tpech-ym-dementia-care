@@ -13,53 +13,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- NOTE: Lucide Icons script is moved to the end of the body -->
+    <!-- 引用我們自己的共用樣式表 -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <style>
-        /* * 全新風格設計 (靈感來自 ADHD 指南網站)
-         * - 色調: 採用柔和、溫暖的大地色系與低飽和度的綠色，營造平靜、自然的氛圍。
-         * - 字體: 'Noto Sans TC' 提供清晰易讀的中文體驗。
-         * - 背景: 使用非常淺的米色 (#FDF8F0)，避免純白色的刺眼感。
-        */
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            background-color: #FDF8F0; /* 柔和米色背景 */
-            color: #4C4F5A; /* 深灰藍色文字，閱讀舒適 */
-        }
-        
-        /* 自定義顏色 */
-        .bg-soft-green { background-color: #4A7C59; } /* 柔和綠，用於主要按鈕和標題 */
-        .bg-light-beige { background-color: #FDF8F0; }
-        .bg-white-card { background-color: #FFFFFF; }
-        .text-soft-green { color: #4A7C59; }
-        .text-warm-orange { color: #F5B880; } /* 溫暖橘色，用於點綴和圖標 */
-        .text-main { color: #4C4F5A; }
-        .border-soft-green { border-color: #4A7C59; }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-    </style>
 </head>
 <body class="bg-light-beige">
 
     <!-- Header and Navigation -->
     <header class="bg-light-beige/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200/80">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-2">
+            <a href="index.html" class="flex items-center space-x-2">
                 <i data-lucide="brain-circuit" class="text-soft-green"></i>
                 <span class="font-bold text-xl text-soft-green">幸福記憶小樓</span>
             </a>
             <div class="hidden md:flex space-x-8">
-                <a href="#services" class="text-main hover:text-soft-green transition duration-300">服務內容</a>
+                <a href="pages/guide/index.html" class="text-main hover:text-soft-green transition duration-300">初確診指南</a>
+                <a href="pages/knowledge-base/index.html" class="text-main hover:text-soft-green transition duration-300">進階照護知識庫</a>
+                <a href="#services" class="text-main hover:text-soft-green transition duration-300">據點服務</a>
                 <a href="#join" class="text-main hover:text-soft-green transition duration-300">如何加入</a>
-                <a href="#resources" class="text-main hover:text-soft-green transition duration-300">衛教資源</a>
             </div>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-main focus:outline-none">
@@ -69,9 +40,10 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-light-beige/95">
-            <a href="#services" class="block py-2 px-4 text-sm text-main hover:bg-soft-green/10">服務內容</a>
+            <a href="pages/guide/index.html" class="block py-2 px-4 text-sm text-main hover:bg-soft-green/10">初確診指南</a>
+            <a href="pages/knowledge-base/index.html" class="block py-2 px-4 text-sm text-main hover:bg-soft-green/10">進階照護知識庫</a>
+            <a href="#services" class="block py-2 px-4 text-sm text-main hover:bg-soft-green/10">據點服務</a>
             <a href="#join" class="block py-2 px-4 text-sm text-main hover:bg-soft-green/10">如何加入</a>
-            <a href="#resources" class="block py-2 px-4 text-sm text-main hover:bg-soft-green/10">衛教資源</a>
         </div>
     </header>
 
@@ -83,10 +55,40 @@
                     <h1 class="text-4xl md:text-5xl font-bold text-soft-green mb-4">幸福記憶小樓</h1>
                     <p class="text-xl text-main mb-6">一個為失智症長者與家屬打造的溫暖園地，我們用專業與愛，陪伴您走過每一段記憶的旅程。</p>
                     <p class="text-md text-gray-500 mb-8">臺北市立聯合醫院陽明院區 神經內科</p>
-                    <a href="#services" class="bg-soft-green text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300 shadow-lg">查看課程與服務</a>
+                    <a href="#services" class="bg-soft-green text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300 shadow-lg">查看據點服務</a>
                 </div>
                 <div class="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl">
                     <img src="https://raw.githubusercontent.com/hctsai1006/temp/main/images/%E7%BE%8E%E8%A1%93%E5%89%B5%E4%BD%9C.jpg" alt="一群亞洲長者開心地進行美術創作活動" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- New Guide Sections -->
+        <section id="guides" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-soft-green mb-2">您的失智症照護夥伴</h2>
+                    <p class="text-main max-w-2xl mx-auto">無論您是剛踏上這段旅程，或是需要更深入的照護知識，聯醫團隊都為您準備了最完整的線上資源。</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Card 1: First-Year Guide -->
+                    <a href="pages/guide/index.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 bg-soft-green/10 rounded-full mb-4">
+                            <i data-lucide="map" class="w-10 h-10 text-soft-green"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-soft-green mb-2">初確診指南</h3>
+                        <p class="text-main flex-grow mb-4">為確診第一年的您，提供從理解診斷、尋求醫療、法律規劃到社會支持的完整第一哩路指引。</p>
+                        <span class="bg-soft-green text-white font-semibold py-2 px-6 rounded-full">進入指南</span>
+                    </a>
+                    <!-- Card 2: Advanced Care Knowledge Base -->
+                    <a href="pages/knowledge-base/index.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 bg-soft-green/10 rounded-full mb-4">
+                            <i data-lucide="library" class="w-10 h-10 text-soft-green"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-soft-green mb-2">進階照護知識庫</h3>
+                        <p class="text-main flex-grow mb-4">深入探討行為症狀應對、有意義的活動安排、居家環境改造、藥物知識及安寧緩和療護等專業照護主題。</p>
+                        <span class="bg-soft-green text-white font-semibold py-2 px-6 rounded-full">進入知識庫</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -95,7 +97,7 @@
         <section id="services" class="py-16 bg-white-card">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-soft-green mb-2">服務內容</h2>
+                    <h2 class="text-3xl font-bold text-soft-green mb-2">據點服務</h2>
                     <p class="text-main mb-10">我們提供多元化的免費課程，旨在促進認知、活化身心。</p>
                 </div>
                 
@@ -211,42 +213,6 @@
             </div>
         </section>
 
-        <!-- Resources Section -->
-        <section id="resources" class="py-16 bg-white-card">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-soft-green mb-2">衛教與資源</h2>
-                    <p class="text-main mb-10">提供實用的失智症照護知識與相關資源，陪伴您與家人前行。</p>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white-card rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://raw.githubusercontent.com/hctsai1006/temp/main/images/MDDordemia.png" alt="分辨失智與憂鬱的資訊圖表" class="w-full h-48 object-cover">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold text-soft-green mb-3">如何分辨失智與憂鬱？</h3>
-                            <p class="text-main flex-grow">家人是心情不好還是記憶力真的退化了？由神經內科醫師為您解析兩者的關鍵差異，提供初步判斷的指引。</p>
-                            <a href="pages/resource-dementia-vs-depression.html" class="mt-4 text-warm-orange font-bold hover:underline self-start">閱讀更多 &rarr;</a>
-                        </div>
-                    </div>
-                    <div class="bg-white-card rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://raw.githubusercontent.com/hctsai1006/temp/main/images/ask%20same%20question%20.png" alt="應對重複提問的技巧圖示" class="w-full h-48 object-cover">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold text-soft-green mb-3">照顧者實用技巧：應對重複提問</h3>
-                            <p class="text-main flex-grow">面對長輩不斷重複問同一個問題，該怎麼辦？這裡提供五個溫和且有效的方法，減輕您與家人的壓力。</p>
-                            <a href="pages/resource-caregiver-tips.html" class="mt-4 text-warm-orange font-bold hover:underline self-start">閱讀更多 &rarr;</a>
-                        </div>
-                    </div>
-                    <div class="bg-white-card rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" alt="書桌上放著文件、筆記本與筆電，象徵資源與規劃" class="w-full h-48 object-cover">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold text-soft-green mb-3">政府補助與社區資源</h3>
-                            <p class="text-main flex-grow">整理臺北市政府相關的長照補助、輔具申請與其他社區支持網絡資訊，讓您一次掌握所有可用資源。</p>
-                            <a href="pages/resource-gov-links.html" class="mt-4 text-warm-orange font-bold hover:underline self-start">閱讀更多 &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <!-- Footer -->
@@ -262,34 +228,10 @@
         <i data-lucide="arrow-up" class="w-6 h-6"></i>
     </button>
 
-    <!-- Scripts moved to the end of the body for better performance and to avoid loading errors -->
+    <!-- Scripts moved to the end of the body -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        // This script block will execute after the lucide script has been loaded.
-        
-        // Initialize Lucide Icons
-        lucide.createIcons();
-
-        // Mobile Menu Toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Back to Top Button
-        const backToTopButton = document.getElementById('back-to-top');
-        window.onscroll = function() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                backToTopButton.classList.remove('hidden');
-            } else {
-                backToTopButton.classList.add('hidden');
-            }
-        };
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
+    <!-- 引用我們自己的共用腳本 -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
