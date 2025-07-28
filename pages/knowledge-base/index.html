@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進階照護知識庫 - 幸福記憶小樓</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Noto Sans Traditional Chinese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #FDF8F0;
+            color: #4C4F5A;
+        }
+        .bg-soft-green { background-color: #4A7C59; }
+        .bg-light-beige { background-color: #FDF8F0; }
+        .bg-white-card { background-color: #FFFFFF; }
+        .text-soft-green { color: #4A7C59; }
+        .text-warm-orange { color: #F5B880; }
+        .text-main { color: #4C4F5A; }
+        .border-soft-green { border-color: #4A7C59; }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-light-beige">
+
+    <!-- Header -->
+    <header class="bg-light-beige/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200/80">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="flex items-center space-x-2">
+                <i data-lucide="brain-circuit" class="text-soft-green"></i>
+                <span class="font-bold text-xl text-soft-green">幸福記憶小樓</span>
+            </a>
+            <div>
+                <a href="../../index.html" class="text-main hover:text-soft-green transition duration-300 font-semibold">
+                    &larr; 返回首頁
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-6 py-12 md:py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-soft-green mb-4">進階照護知識庫</h1>
+                <p class="text-lg text-main max-w-3xl mx-auto">
+                    照顧是一段持續學習的旅程。當您準備好面對更長遠的挑戰時，臺北市立聯合醫院的專家知識庫將是您的力量。這裡集結了處理複雜問題的實用策略與深度知識，陪伴您走得更穩、更遠。
+                </p>
+            </div>
+
+            <!-- Navigation Cards Section -->
+            <div class="max-w-5xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: BPSD -->
+                <a href="1-bpsd.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="siren" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">應對行為症狀</h2>
+                    <p class="text-main flex-grow">學習系統化的六步驟問題解決法，理解躁動、憂鬱、重複提問等行為背後的原因，並掌握有效的非藥物應對策略。</p>
+                    <span class="mt-4 text-warm-orange font-bold">學習應對策略 &rarr;</span>
+                </a>
+
+                <!-- Card 2: Meaningful Activities -->
+                <a href="2-meaningful-activities.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="puzzle" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">創造有意義的一天</h2>
+                    <p class="text-main flex-grow">職能治療師教您，如何將日常活動轉化為最好的非藥物治療，透過「恰如其分」的挑戰，提升家人的生活品質與尊嚴。</p>
+                    <span class="mt-4 text-warm-orange font-bold">探索活動設計 &rarr;</span>
+                </a>
+
+                <!-- Card 3: Dementia-Friendly Home -->
+                <a href="3-friendly-home.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="home" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">打造失智友善的家</h2>
+                    <p class="text-main flex-grow">透過環境改造五大原則與科技輔助，提升居家安全、降低照顧者負擔，並維持家人最大程度的獨立性。</p>
+                    <span class="mt-4 text-warm-orange font-bold">學習環境改造 &rarr;</span>
+                </a>
+
+                <!-- Card 4: Medication Wisdom -->
+                <a href="4-medication.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="pilcrow" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">藥物治療的智慧</h2>
+                    <p class="text-main flex-grow">協助您成為醫師的溝通好夥伴，理解藥物在失智症照護中扮演的角色，並學習如何觀察與回報藥物效果及副作用。</p>
+                    <span class="mt-4 text-warm-orange font-bold">了解藥物知識 &rarr;</span>
+                </a>
+
+                <!-- Card 5: Palliative Care -->
+                <a href="5-palliative-care.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="feather" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">安寧緩和照護</h2>
+                    <p class="text-main flex-grow">當疾病進展至晚期，如何確保摯愛家人獲得有尊嚴、高品質的善終照護。認識安寧緩和療護的真正意義與四大照護面向。</p>
+                    <span class="mt-4 text-warm-orange font-bold">認識善終照護 &rarr;</span>
+                </a>
+
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-white-card border-t mt-12">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 臺北市立聯合醫院陽明院區 神經內科. All Rights Reserved.</p>
+            <p class="text-sm mt-2">本網站內容僅供參考，若有醫療問題請諮詢專業醫師。</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
