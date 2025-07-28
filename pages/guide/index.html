@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初確診指南 - 幸福記憶小樓</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Noto Sans Traditional Chinese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #FDF8F0;
+            color: #4C4F5A;
+        }
+        .bg-soft-green { background-color: #4A7C59; }
+        .bg-light-beige { background-color: #FDF8F0; }
+        .bg-white-card { background-color: #FFFFFF; }
+        .text-soft-green { color: #4A7C59; }
+        .text-warm-orange { color: #F5B880; }
+        .text-main { color: #4C4F5A; }
+        .border-soft-green { border-color: #4A7C59; }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-light-beige">
+
+    <!-- Header -->
+    <header class="bg-light-beige/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200/80">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="flex items-center space-x-2"> <!-- Link corrected to go up two levels to the root index.html -->
+                <i data-lucide="brain-circuit" class="text-soft-green"></i>
+                <span class="font-bold text-xl text-soft-green">幸福記憶小樓</span>
+            </a>
+            <div>
+                <a href="../../index.html" class="text-main hover:text-soft-green transition duration-300 font-semibold">
+                    &larr; 返回首頁
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-6 py-12 md:py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-soft-green mb-4">確診失智症第一年：您的第一份安心指南</h1>
+                <p class="text-lg text-main max-w-3xl mx-auto">
+                    親愛的家人，當您或您的摯愛初次面對失智症的診斷時，心中難免充滿疑問與不安。請您知道，您並不孤單。臺北市立聯合醫院的團隊準備了這份指南，希望能陪伴您走過這關鍵的第一哩路，將迷惘轉化為前行的力量。
+                </p>
+            </div>
+
+            <!-- Navigation Cards Section -->
+            <div class="max-w-5xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card 1: 認識第一步 -->
+                <a href="1-understanding-diagnosis.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="file-text" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">認識第一步</h2>
+                    <p class="text-main flex-grow">從理解「輕度認知障礙(MCI)」開始，解讀診斷書上的CDR分數，並了解如何尋求最適合的醫療協助。</p>
+                    <span class="mt-4 text-warm-orange font-bold">深入了解 &rarr;</span>
+                </a>
+
+                <!-- Card 2: 積極應對 -->
+                <a href="2-treatments.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="heart-pulse" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">積極應對</h2>
+                    <p class="text-main flex-grow">探索延緩病程最有效的科學方法，包含非藥物治療的護腦三支柱，以及藥物治療的最新進展與務實考量。</p>
+                    <span class="mt-4 text-warm-orange font-bold">探索治療選項 &rarr;</span>
+                </a>
+
+                <!-- Card 3: 超前部署 -->
+                <a href="3-legal-planning.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="shield" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">超前部署</h2>
+                    <p class="text-main flex-grow">在黃金規劃期，為家人與自己建立法律與財務的安全網。深入了解意定監護、預立醫療決定與財產信託。</p>
+                    <span class="mt-4 text-warm-orange font-bold">學習法律規劃 &rarr;</span>
+                </a>
+
+                <!-- Card 4: 尋求支持 -->
+                <a href="4-finding-support.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-soft-green/10 rounded-full mb-4">
+                        <i data-lucide="users" class="w-8 h-8 text-soft-green"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-soft-green mb-2">尋求支持</h2>
+                    <p class="text-main flex-grow">您不是一個人！彙整台灣最關鍵的支持網絡，從1966長照專線、社區據點到家屬支持團體，學習為自己求助。</p>
+                    <span class="mt-4 text-warm-orange font-bold">尋找支持網絡 &rarr;</span>
+                </a>
+
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-white-card border-t mt-12">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 臺北市立聯合醫院陽明院區 神經內科. All Rights Reserved.</p>
+            <p class="text-sm mt-2">本網站內容僅供參考，若有醫療問題請諮詢專業醫師。</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
