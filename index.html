@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>幸福記憶小棧 - 臺北市立聯合醫院陽明院區</title>
+    <title>幸福記憶小樓 - 臺北市立聯合醫院陽明院區失智症家庭支持網</title>
     
+    <meta name="description" content="由臺北市立聯合醫院陽明院區神經內科為失智症(含輕度認知障礙 MCI)家庭打造的線上關懷指南。提供從初確診、日常照護、法律規劃到社會資源的完整資訊，是您在照護路上的第一份安心地圖。">
+    <meta name="keywords" content="失智症, 輕度認知障礙, MCI, CDR 0.5, 失智據點, 照顧者支持, 臺北市立聯合醫院, 陽明院區, 神經內科, 幸福記憶小樓, 長照2.0, 台灣">
+    <meta name="author" content="臺北市立聯合醫院陽明院區 神經內科">
+
+    <meta property="og:title" content="幸福記憶小樓 - 臺北市立聯合醫院陽明院區失智症家庭支持網">
+    <meta property="og:description" content="為初確診失智症(MCI)的家庭提供一份安心指南，整合醫療、照護、法律與社會資源，由聯醫團隊陪伴您走過第一哩路。">
+    <meta property="og:image" content="https://raw.githubusercontent.com/thc1006/tpech-ym-dementia-care/main/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%20(125).png">
+    <meta property="og:url" content="https://thc1006.github.io/tpech-ym-dementia-care/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="幸福記憶小樓 - 臺北市立聯合醫院陽明院區失智症家庭支持網">
+    <meta name="twitter:description" content="為初確診失智症(MCI)的家庭提供一份安心指南，整合醫療、照護、法律與社會資源，由聯醫團隊陪伴您走過第一哩路。">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/thc1006/tpech-ym-dementia-care/main/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%20(125).png">
+
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +50,7 @@
         .prose ul { list-style-type: disc; margin-left: 1.25rem; }
         .prose ul > li::marker { color: var(--soft-green); }
     </style>
+
 </head>
 <body class="bg-light-beige">
 
@@ -210,7 +226,7 @@
                             <p class="flex items-center"><i data-lucide="clock" class="w-5 h-5 mr-4 text-warm-orange flex-shrink-0"></i><span>服務時間：週二、三、五 08:30 - 16:30</span></p>
                         </div>
                         <div class="mt-6 rounded-xl overflow-hidden h-64 shadow-md">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.250567781555!2d121.5309333150074!3d25.09325998394437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a5fd6a931447%3A0x6331a69502931a74!2zMTE1OTHoh6og6YGL5Y-w5biC5a6J5p6X6Lev5b-g6K2J6LevMTcx5be3MTbomZ8xMuiZnw!5e0!3m2!1szh-TW!2stw!4v1628062031109!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="http://googleusercontent.com/maps.google.com/3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="mt-4">
                             <a href="https://goo.gl/maps/example" target="_blank" class="block w-full bg-soft-green text-white text-center font-semibold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-colors">
@@ -269,101 +285,7 @@
     </button>
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        
-        // --- 基礎 UI 功能 ---
-        lucide.createIcons();
-
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const backToTopButton = document.getElementById('back-to-top');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.remove('hidden');
-            } else {
-                backToTopButton.classList.add('hidden');
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // --- AI 活動規劃師邏輯 (Powered by Puter.js) ---
-        const generateBtn = document.getElementById('generate-plan-btn');
-        const promptInput = document.getElementById('activity-prompt');
-        const resultDiv = document.getElementById('ai-result');
-        const loader = document.getElementById('loader');
-
-        generateBtn.addEventListener('click', async () => {
-            const userInput = promptInput.value.trim();
-            if (!userInput) {
-                resultDiv.innerHTML = '<p class="text-red-500 text-center">請先描述家人的興趣與能力！</p>';
-                return;
-            }
-
-            // 準備 UI
-            resultDiv.innerHTML = '';
-            resultDiv.classList.add('hidden');
-            loader.classList.remove('hidden');
-            generateBtn.disabled = true;
-
-            // ✨ 步驟 3: 強化 Prompt，引導 AI 扮演專家並使用流式輸出
-            const prompt = `
-            你是一位專業的失智症照護專家，專長是為輕度至中度失智症長者設計有意義的日常活動。請根據家屬提供的描述，為長者規劃一份個人化的「三日活動建議表」。
-
-            **規劃原則：**
-            1.  **安全性**：活動必須安全、簡單、不易造成挫折。
-            2.  **個人化**：活動需緊扣長者的興趣與過去的生活經驗。
-            3.  **彈性**：這是一份建議，提醒家屬可依長者當天的身心狀況彈性調整。
-            4.  **感官刺激**：活動應包含聽覺、視覺、觸覺等不同感官的刺激。
-            5.  **溫馨鼓勵**：語氣需充滿同理心與鼓勵。
-
-            **家屬描述如下：**
-            「${userInput}」
-
-            請以 Markdown 格式回覆，包含第一天、第二天、第三天的上午、下午、晚間活動建議。
-            `;
-
-            try {
-                // 使用 Puter.js 的流式輸出 (stream: true)
-                const responseStream = await puter.ai.chat(prompt, {
-                    model: 'google/gemini-2.0-flash-lite-001',
-                    stream: true
-                });
-
-                // 準備接收內容
-                loader.classList.add('hidden');
-                resultDiv.classList.remove('hidden');
-                
-                // 處理流式回應
-                for await (const part of responseStream) {
-                    if (part?.text) {
-                        // 將收到的 Markdown 片段轉換為 HTML 並附加到結果區塊
-                        let htmlPart = part.text
-                            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                            .replace(/\n/g, '<br>');
-                        resultDiv.innerHTML += htmlPart;
-                    }
-                }
-            } catch (error) {
-                console.error("Puter.js AI request failed:", error);
-                resultDiv.innerHTML = `<p class="text-red-500 text-center">抱歉，AI 小幫手暫時無法回應，請稍後再試。</p>`;
-                loader.classList.add('hidden');
-                resultDiv.classList.remove('hidden');
-            } finally {
-                generateBtn.disabled = false;
-            }
-        });
-    });
-    </script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
