@@ -1,30 +1,48 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>幸福記憶小棧 - 臺北市立聯合醫院陽明院區</title>
+    <title>幸福記憶小樓 - 臺北市立聯合醫院陽明院區</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Noto Sans Traditional Chinese -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- 引用我們自己的共用樣式表 -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://js.puter.com/v2/"></script>
 
+    <style>
+        :root {
+            --soft-green: #2E856E;
+            --light-beige: #FBF9F3;
+            --white-card: #FFFFFF;
+            --main-text: #374151;
+            --warm-orange: #E58D42;
+        }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--light-beige);
+        }
+        .text-soft-green { color: var(--soft-green); }
+        .bg-soft-green { background-color: var(--soft-green); }
+        .bg-light-beige { background-color: var(--light-beige); }
+        .bg-white-card { background-color: var(--white-card); }
+        .text-main { color: var(--main-text); }
+        .text-warm-orange { color: var(--warm-orange); }
+        .prose h4 { font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--soft-green); }
+        .prose ul { list-style-type: disc; margin-left: 1.25rem; }
+        .prose ul > li::marker { color: var(--soft-green); }
+    </style>
 </head>
 <body class="bg-light-beige">
 
-    <!-- Header and Navigation -->
     <header class="bg-light-beige/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200/80">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-2">
                 <i data-lucide="brain-circuit" class="text-soft-green"></i>
-                <span class="font-bold text-xl text-soft-green">幸福記憶小棧</span>
+                <span class="font-bold text-xl text-soft-green">幸福記憶小樓</span>
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="pages/guide/index.html" class="text-lg text-main hover:text-soft-green transition duration-300">初確診指南</a>
@@ -38,7 +56,6 @@
                 </button>
             </div>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-light-beige/95">
             <a href="pages/guide/index.html" class="block py-2 px-4 text-base text-main hover:bg-soft-green/10">初確診指南</a>
             <a href="pages/knowledge-base/index.html" class="block py-2 px-4 text-base text-main hover:bg-soft-green/10">進階照護知識庫</a>
@@ -48,22 +65,20 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="py-16 md:py-24">
             <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
                 <div class="text-center md:text-left">
-                    <h1 class="text-4xl md:text-6xl font-bold text-soft-green mb-4">幸福記憶小棧</h1>
+                    <h1 class="text-4xl md:text-6xl font-bold text-soft-green mb-4">幸福記憶小樓</h1>
                     <p class="text-2xl text-main mb-6">一個為失智症長者與家屬打造的溫暖園地，我們用專業與愛，陪伴您走過每一段記憶的旅程。</p>
                     <p class="text-lg text-gray-500 mb-8">臺北市立聯合醫院陽明院區 神經內科</p>
                     <a href="#services" class="bg-soft-green text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300 shadow-lg text-lg">查看據點服務</a>
                 </div>
                 <div class="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl">
-                    <img src="https://raw.githubusercontent.com/hctsai1006/temp/main/images/%E7%BE%8E%E8%A1%93%E5%89%B5%E4%BD%9C.jpg" alt="一群亞洲長者開心地進行美術創作活動" class="w-full h-full object-cover">
+                    <img src="https://raw.githubusercontent.com/thc1006/temp/main/images/%E7%BE%8E%E8%A1%93%E5%89%B5%E4%BD%9C.jpg" alt="一群亞洲長者開心地進行美術創作活動" class="w-full h-full object-cover">
                 </div>
             </div>
         </section>
 
-        <!-- New Guide Sections -->
         <section id="guides" class="py-16">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -71,7 +86,6 @@
                     <p class="text-lg text-main max-w-2xl mx-auto">無論您是剛踏上這段旅程，或是需要更深入的照護知識，聯醫團隊都為您準備了最完整的線上資源。</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    <!-- Card 1: First-Year Guide -->
                     <a href="pages/guide/index.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
                         <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 bg-soft-green/10 rounded-full mb-4">
                             <i data-lucide="map" class="w-10 h-10 text-soft-green"></i>
@@ -80,7 +94,6 @@
                         <p class="text-lg text-main flex-grow mb-4">為確診第一年的您，提供從理解診斷、尋求醫療、法律規劃到社會支持的完整第一哩路指引。</p>
                         <span class="bg-soft-green text-white font-semibold py-2 px-6 rounded-full">進入指南</span>
                     </a>
-                    <!-- Card 2: Advanced Care Knowledge Base -->
                     <a href="pages/knowledge-base/index.html" class="bg-white-card rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
                         <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 bg-soft-green/10 rounded-full mb-4">
                             <i data-lucide="library" class="w-10 h-10 text-soft-green"></i>
@@ -93,8 +106,33 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-16 bg-white-card">
+        <section id="ai-planner" class="py-16 bg-white-card">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-soft-green mb-2">✨ 個人化活動規劃小幫手</h2>
+                    <p class="text-lg text-main max-w-2xl mx-auto">不知道如何安排家人的日常生活嗎？試試我們的 AI 小幫手！只要輸入家人的興趣與能力，就能為您產生一份溫馨、安全、可行的三日活動建議。</p>
+                </div>
+                <div class="max-w-3xl mx-auto bg-light-beige p-8 rounded-2xl shadow-inner">
+                    <div class="mb-4">
+                        <label for="activity-prompt" class="block text-lg font-medium text-main mb-2">請在此描述家人的興趣與目前能力：</label>
+                        <textarea id="activity-prompt" rows="4" class="w-full p-3 border border-gray-300 rounded-lg text-base focus:ring-2 focus:ring-soft-green focus:border-transparent" placeholder="例如：喜歡聽鄧麗君的歌、看老照片、散步。目前可以自己吃飯，但需要提醒才會洗澡。"></textarea>
+                    </div>
+                    <button id="generate-plan-btn" class="w-full bg-soft-green text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300 shadow-lg text-lg flex items-center justify-center">
+                        <i data-lucide="sparkles" class="mr-2"></i>
+                        產生個人化活動建議
+                    </button>
+                    <div id="loader" class="hidden mt-6 text-center">
+                        <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-soft-green"></div>
+                        <p class="text-main mt-2">AI 正在為您規劃中，請稍候...</p>
+                    </div>
+                    <div id="ai-result" class="mt-6 p-6 bg-white-card rounded-lg border border-gray-200 min-h-[100px] prose max-w-none">
+                        <p class="text-gray-500">活動建議將會顯示在這裡...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold text-soft-green mb-2">據點服務</h2>
@@ -103,7 +141,7 @@
                 
                 <div class="bg-white-card rounded-2xl shadow-lg overflow-hidden">
                     <div class="p-4 bg-soft-green/10 text-center font-bold text-soft-green">
-                        幸福記憶小棧・每週課表
+                        幸福記憶小樓・每週課表
                     </div>
                     <div class="overflow-x-auto">
                         <table class="w-full text-center">
@@ -156,12 +194,11 @@
             </div>
         </section>
 
-        <!-- How to Join Section -->
-        <section id="join" class="py-16">
+        <section id="join" class="py-16 bg-white-card">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold text-soft-green mb-2">如何加入我們</h2>
-                    <p class="text-lg text-main mb-10">我們簡化了申請流程，讓您能輕鬆地成為幸福記憶小棧的一份子。</p>
+                    <p class="text-lg text-main mb-10">我們簡化了申請流程，讓您能輕鬆地成為幸福記憶小樓的一份子。</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="bg-light-beige p-8 rounded-2xl">
@@ -173,11 +210,10 @@
                             <p class="flex items-center"><i data-lucide="clock" class="w-5 h-5 mr-4 text-warm-orange flex-shrink-0"></i><span>服務時間：週二、三、五 08:30 - 16:30</span></p>
                         </div>
                         <div class="mt-6 rounded-xl overflow-hidden h-64 shadow-md">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.262685797371!2d121.53102537611832!3d25.09289297777833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aeb142b31351%3A0x6a351f4943536c47!2z6JCs6Jek6Yar55CG!5e0!3m2!1szh-TW!2stw!4v1721811566318!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.250567781555!2d121.5309333150074!3d25.09325998394437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a5fd6a931447%3A0x6331a69502931a74!2zMTE1OTHoh6og6YGL5Y-w5biC5a6J5p6X6Lev5b-g6K2J6LevMTcx5be3MTbomZ8xMuiZnw!5e0!3m2!1szh-TW!2stw!4v1628062031109!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <!-- Custom Map Link Button -->
                         <div class="mt-4">
-                            <a href="https://maps.app.goo.gl/EFx5oVixevXfdpvn6" target="_blank" class="block w-full bg-soft-green text-white text-center font-semibold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-colors">
+                            <a href="https://goo.gl/maps/example" target="_blank" class="block w-full bg-soft-green text-white text-center font-semibold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-colors">
                                 顯示詳細地圖
                             </a>
                         </div>
@@ -210,7 +246,7 @@
                                 <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 bg-soft-green text-white rounded-full font-bold mr-4">4</div>
                                 <div>
                                     <h4 class="font-bold text-main text-xl">通知結果與排課</h4>
-                                    <p class="text-base text-gray-600">完成後即可加入小棧，開始溫馨的課程！</p>
+                                    <p class="text-base text-gray-600">完成後即可加入小樓，開始溫馨的課程！</p>
                                 </div>
                             </li>
                         </ol>
@@ -221,23 +257,113 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-white-card border-t">
         <div class="container mx-auto px-6 py-8 text-center text-gray-500">
-            <p class="text-base">&copy; 2025 臺北市立聯合醫院陽明院區 神經內科. All Rights Reserved.</p>
+            <p class="text-base">© 2025 臺北市立聯合醫院陽明院區 神經內科. All Rights Reserved.</p>
             <p class="text-base mt-2">本網站內容僅供參考，若有醫療問題請諮詢專業醫師。</p>
         </div>
     </footer>
     
-    <!-- Back to Top Button -->
     <button id="back-to-top" class="hidden fixed bottom-5 right-5 bg-soft-green text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition-opacity">
         <i data-lucide="arrow-up" class="w-6 h-6"></i>
     </button>
 
-    <!-- Scripts moved to the end of the body -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- 引用我們自己的共用腳本 -->
-    <script src="assets/js/main.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // --- 基礎 UI 功能 ---
+        lucide.createIcons();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const backToTopButton = document.getElementById('back-to-top');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // --- AI 活動規劃師邏輯 (Powered by Puter.js) ---
+        const generateBtn = document.getElementById('generate-plan-btn');
+        const promptInput = document.getElementById('activity-prompt');
+        const resultDiv = document.getElementById('ai-result');
+        const loader = document.getElementById('loader');
+
+        generateBtn.addEventListener('click', async () => {
+            const userInput = promptInput.value.trim();
+            if (!userInput) {
+                resultDiv.innerHTML = '<p class="text-red-500 text-center">請先描述家人的興趣與能力！</p>';
+                return;
+            }
+
+            // 準備 UI
+            resultDiv.innerHTML = '';
+            resultDiv.classList.add('hidden');
+            loader.classList.remove('hidden');
+            generateBtn.disabled = true;
+
+            // ✨ 步驟 3: 強化 Prompt，引導 AI 扮演專家並使用流式輸出
+            const prompt = `
+            你是一位專業的失智症照護專家，專長是為輕度至中度失智症長者設計有意義的日常活動。請根據家屬提供的描述，為長者規劃一份個人化的「三日活動建議表」。
+
+            **規劃原則：**
+            1.  **安全性**：活動必須安全、簡單、不易造成挫折。
+            2.  **個人化**：活動需緊扣長者的興趣與過去的生活經驗。
+            3.  **彈性**：這是一份建議，提醒家屬可依長者當天的身心狀況彈性調整。
+            4.  **感官刺激**：活動應包含聽覺、視覺、觸覺等不同感官的刺激。
+            5.  **溫馨鼓勵**：語氣需充滿同理心與鼓勵。
+
+            **家屬描述如下：**
+            「${userInput}」
+
+            請以 Markdown 格式回覆，包含第一天、第二天、第三天的上午、下午、晚間活動建議。
+            `;
+
+            try {
+                // 使用 Puter.js 的流式輸出 (stream: true)
+                const responseStream = await puter.ai.chat(prompt, {
+                    model: 'google/gemini-2.0-flash-lite-001',
+                    stream: true
+                });
+
+                // 準備接收內容
+                loader.classList.add('hidden');
+                resultDiv.classList.remove('hidden');
+                
+                // 處理流式回應
+                for await (const part of responseStream) {
+                    if (part?.text) {
+                        // 將收到的 Markdown 片段轉換為 HTML 並附加到結果區塊
+                        let htmlPart = part.text
+                            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                            .replace(/\n/g, '<br>');
+                        resultDiv.innerHTML += htmlPart;
+                    }
+                }
+            } catch (error) {
+                console.error("Puter.js AI request failed:", error);
+                resultDiv.innerHTML = `<p class="text-red-500 text-center">抱歉，AI 小幫手暫時無法回應，請稍後再試。</p>`;
+                loader.classList.add('hidden');
+                resultDiv.classList.remove('hidden');
+            } finally {
+                generateBtn.disabled = false;
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>
