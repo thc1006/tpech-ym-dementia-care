@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新消息與活動 - 幸福記憶小樓</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Noto Sans Traditional Chinese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #FDF8F0;
+            color: #4C4F5A;
+        }
+        .bg-soft-green { background-color: #4A7C59; }
+        .bg-light-beige { background-color: #FDF8F0; }
+        .bg-white-card { background-color: #FFFFFF; }
+        .text-soft-green { color: #4A7C59; }
+        .text-warm-orange { color: #F5B880; }
+        .text-main { color: #4C4F5A; }
+        .border-soft-green { border-color: #4A7C59; }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-light-beige">
+    
+    <!-- Header -->
+    <header class="bg-light-beige/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200/80">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center space-x-2">
+                <i data-lucide="brain-circuit" class="text-soft-green"></i>
+                <span class="font-bold text-xl text-soft-green">幸福記憶小樓</span>
+            </a>
+            <div>
+                <a href="../index.html" class="text-main hover:text-soft-green transition duration-300 font-semibold">
+                    &larr; 返回首頁
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-6 py-12">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl font-bold text-soft-green mb-2">最新消息與活動</h1>
+                <p class="text-lg text-main">關注幸福記憶小樓的最新動態、活動花絮與社區公告。</p>
+            </div>
+
+            <!-- News & Events Grid -->
+            <div class="max-w-4xl mx-auto space-y-8">
+
+                <!-- Event Card 1: Upcoming Event -->
+                <div class="bg-white-card rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-1/3">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop" alt="一群人溫馨地圍坐在一起喝茶聊天" class="w-full h-48 md:h-full object-cover">
+                    </div>
+                    <div class="p-6 md:w-2/3 flex flex-col">
+                        <span class="text-sm font-semibold text-white bg-soft-green px-3 py-1 rounded-full self-start mb-3">活動預告</span>
+                        <h2 class="text-2xl font-bold text-soft-green mb-2">八月份家屬支持團體</h2>
+                        <p class="text-gray-500 text-sm mb-4">日期：2025年8月15日 (五) 下午 2:00 - 4:00</p>
+                        <p class="text-main flex-grow">本次支持團體我們將邀請資深社工，帶領大家討論「如何為自己爭取喘息時間」的議題。這是一個安全的空間，讓您可以自在地分享照顧心情、交流實用技巧。歡迎所有失智症家屬參加，無需報名，直接前來即可。</p>
+                        <div class="mt-4">
+                            <span class="text-sm font-semibold text-main">地點：幸福記憶小樓 (蘭雅教會)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 2: Past Event Recap -->
+                <div class="bg-white-card rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-1/3">
+                        <img src="https://raw.githubusercontent.com/hctsai1006/temp/main/images/%E7%BE%8E%E8%A1%93%E5%89%B5%E4%BD%9C.jpg" alt="長者們專注於藝術創作" class="w-full h-48 md:h-full object-cover">
+                    </div>
+                    <div class="p-6 md:w-2/3 flex flex-col">
+                        <span class="text-sm font-semibold text-white bg-warm-orange px-3 py-1 rounded-full self-start mb-3">活動花絮</span>
+                        <h2 class="text-2xl font-bold text-soft-green mb-2">七月份藝術創作成果展</h2>
+                        <p class="text-gray-500 text-sm mb-4">日期：2025年7月28日</p>
+                        <p class="text-main flex-grow">感謝所有參與我們七月份藝術創作課程的長輩與家屬！看著大家從一張白紙開始，創作出充滿生命力的作品，每一幅畫都訴說著獨一無二的故事。這些美麗的成果目前正在據點內展示，歡迎大家隨時回來欣賞。</p>
+                    </div>
+                </div>
+
+                <!-- Event Card 3: Announcement -->
+                <div class="bg-white-card rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-1/3">
+                        <img src="https://images.unsplash.com/photo-1611095965923-893b3a0a2c68?q=80&w=2070&auto=format&fit=crop" alt="日曆上標示著節日" class="w-full h-48 md:h-full object-cover">
+                    </div>
+                    <div class="p-6 md:w-2/3 flex flex-col">
+                        <span class="text-sm font-semibold text-white bg-gray-500 px-3 py-1 rounded-full self-start mb-3">據點公告</span>
+                        <h2 class="text-2xl font-bold text-soft-green mb-2">中秋節休假通知</h2>
+                        <p class="text-gray-500 text-sm mb-4">發布日期：2025年8月1日</p>
+                        <p class="text-main flex-grow">親愛的學員與家屬們，為配合中秋節連續假期，幸福記憶小樓將於 9月17日(三) 至 9月19日(五) 休假三天，所有課程暫停一次。我們將於 9月23日(二) 恢復正常服務。預祝大家中秋佳節愉快！</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-white-card border-t mt-12">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 臺北市立聯合醫院陽明院區 神經內科. All Rights Reserved.</p>
+            <p class="text-sm mt-2">本網站內容僅供參考，若有醫療問題請諮詢專業醫師。</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
