@@ -1,0 +1,35 @@
+/* *
+ * 幸福記憶小棧 官方網站 - 共用樣式表
+ * -----------------------------------------
+ * 全新風格設計 (靈感來自 ADHD 指南網站)
+ * - 色調: 採用柔和、溫暖的大地色系與低飽和度的綠色，營造平靜、自然的氛圍。
+ * - 字體: 'Noto Sans TC' 提供清晰易讀的中文體驗。
+ * - 背景: 使用非常淺的米色 (#FDF8F0)，避免純白色的刺眼感。
+ */
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #FDF8F0; /* 柔和米色背景 */
+    color: #4C4F5A; /* 深灰藍色文字，閱讀舒適 */
+}
+
+/* 自定義顏色 */
+.bg-soft-green { background-color: #4A7C59; } /* 柔和綠，用於主要按鈕和標題 */
+.bg-light-beige { background-color: #FDF8F0; }
+.bg-white-card { background-color: #FFFFFF; }
+.text-soft-green { color: #4A7C59; }
+.text-warm-orange { color: #F5B880; } /* 溫暖橘色，用於點綴和圖標 */
+.text-main { color: #4C4F5A; }
+.border-soft-green { border-color: #4A7C59; }
+
+/* 全站通用設定 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 可展開/收合區塊 (Accordion) 的樣式 */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
